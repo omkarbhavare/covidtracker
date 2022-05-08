@@ -1,38 +1,93 @@
-.App {
+body {
   text-align: center;
+  background-color: #747579;
+  
+}
+.graph-section{
+  width: 600px;
+  height: 300px;
+  margin-top: 50px;
+  position: absolute;
+  left: 25%;
+  background-color: rgb(223, 226, 226);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+color: whitesmoke;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.card{
+  background-color: antiquewhite;
+  padding: 20px;
+  box-sizing: border-box;
+  box-sizing: 0 0 10px 0 #cecece;
+  border: 1px solid #cecece;
+  width: 400px;
+  margin: 10px 10px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-style{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.optionClass{
+  margin-top:25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.optionClass select{
+  margin-left: 10px;
+}
+
+
+@media screen and (max-width : 1000px) {
+  .graph-section{
+    width: 520px;
+    height: 520px;
+    margin-top: 25px;
+    position: absolute;
+    left: 20%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card{
+    width: 300px;
+    
+  }
+}
+
+
+
+
+@media screen and (max-width : 768px) {
+  .graph-section{
+    width: 450px;
+    height: 450px;
+    margin-top: 25px;
+    position: absolute;
+    left: 12%;
+  }
+
+  .card{
+    width: 200px;
+    
+  }
+}
+
+
+@media screen and (max-width : 450px) {
+  .graph-section{
+    width: 350px;
+    height: 350px;
+    margin-top: 25px;
+    position: absolute;
+    left: 9%;
+  }
+
+  .card{
+    width: 150px;
+    
   }
 }
